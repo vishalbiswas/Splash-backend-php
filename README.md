@@ -8,6 +8,7 @@ if (isset($access) && $access) {
 	$dbuser = 'root';
 	$dbpass = 'password';
 	$dbname = 'database name';
+	$dbtype = 'm';
 } else {
 	header("HTTP/1.1 403 Forbidden");
 	exit;
@@ -15,4 +16,5 @@ if (isset($access) && $access) {
 
 ```
 
+`$dbtype` refers to the SQL database used. Use 'm' for MySQL and 'p' for PostgreSQL.
 Replace the relevant credentials with your own.
